@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>崔峻嵘 · 个人主页</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f8fafc; color: #1a1a2e; line-height: 1.7; }
+        .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+        /* Header */
+        header { padding: 80px 0 40px; }
+        header h1 { font-size: 40px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 8px; }
+        header .subtitle { font-size: 18px; color: #64748b; margin-bottom: 20px; }
+        header .tagline { font-size: 15px; color: #94a3b8; border-left: 3px solid #3b82f6; padding-left: 16px; }
+
+        .links { display: flex; gap: 16px; margin-top: 20px; flex-wrap: wrap; }
+        .links a { color: #3b82f6; text-decoration: none; font-size: 14px; font-weight: 500; padding: 6px 0; border-bottom: 1px solid transparent; transition: border-color 0.2s; }
+        .links a:hover { border-bottom-color: #3b82f6; }
+
+        /* Sections */
+        section { padding: 48px 0; }
+        h2 { font-size: 20px; font-weight: 600; margin-bottom: 24px; display: flex; align-items: center; gap: 8px; }
+        h2::after { content: ''; flex: 1; height: 1px; background: #e2e8f0; margin-left: 12px; }
+
+        /* Projects */
+        .project { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; margin-bottom: 20px; transition: box-shadow 0.2s; }
+        .project:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+        .project h3 { font-size: 17px; font-weight: 600; margin-bottom: 4px; }
+        .project .tech { font-size: 13px; color: #3b82f6; font-weight: 500; margin-bottom: 10px; }
+        .project p { font-size: 14px; color: #475569; margin-bottom: 8px; }
+        .project .highlights { font-size: 13px; color: #64748b; padding-left: 16px; margin-top: 8px; }
+        .project .highlights li { margin-bottom: 4px; }
+
+        /* Footer */
+        footer { text-align: center; padding: 48px 0; color: #94a3b8; font-size: 13px; }
+        footer a { color: #3b82f6; text-decoration: none; }
+
+        @media (max-width: 600px) {
+            header { padding: 48px 0 24px; }
+            header h1 { font-size: 28px; }
+            .project { padding: 18px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>崔峻嵘</h1>
+            <div class="subtitle">Python 后端开发 · 量化系统 · AI 应用</div>
+            <div class="tagline">
+                大二 · 计科 · 用代码做产品
+            </div>
+            <div class="links">
+                <a href="https://github.com/cuijunrong" target="_blank">GitHub →</a>
+                <a href="mailto:cuijunrong@email.com">Email</a>
+                <a href="#">下载简历</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>项目</h2>
+
+            <div class="project">
+                <h3>OceanEA — 黄金量化交易系统</h3>
+                <div class="tech">MQL5 · MetaTrader 5 · Python · XAUUSD</div>
+                <p>1500+ 行 MQL5 代码，6 大交易模块，已交付客户使用。</p>
+                <ul class="highlights">
+                    <li>双 EMA + ADX + ATR 市场状态识别</li>
+                    <li>双向对冲网格 + 动态马丁仓位管理</li>
+                    <li>三级风控体系（预警 / 暂停 / 强平）</li>
+                    <li>Python 自动化回测 &amp; 参数优化工具链</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <h3>人选天选 — AI 占卜小程序</h3>
+                <div class="tech">微信小程序 · Cloudflare Workers · SiliconFlow AI · Claude Code</div>
+                <p>翻硬币 + AI 生成专属解读的占卜小程序。前端微信小程序，后端无服务器架构调用大模型 API。</p>
+                <ul class="highlights">
+                    <li>微信云开发 + 用户登录 / 数据存储</li>
+                    <li>Cloudflare Workers 无服务器 AI 推理</li>
+                    <li>Claude Code 辅助全栈开发</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <h3>量化分析工具链</h3>
+                <div class="tech">Python · Backtrader · 数据分析</div>
+                <p>为量化交易系统配套的完整分析工具。</p>
+                <ul class="highlights">
+                    <li>交易日志分析器（胜率 / 盈亏比 / Sharpe / 最大回撤）</li>
+                    <li>多参数批量优化脚本</li>
+                    <li>蒙特卡洛模拟验证策略稳健性</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>技能</h2>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                <span style="background: #eef2ff; color: #3b82f6; padding: 6px 14px; border-radius: 20px; font-size: 13px;">Python</span>
+                <span style="background: #eef2ff; color: #3b82f6; padding: 6px 14px; border-radius: 20px; font-size: 13px;">Django</span>
+                <span style="background: #eef2ff; color: #3b82f6; padding: 6px 14px; border-radius: 20px; font-size: 13px;">MQL5</span>
+                <span style="background: #eef2ff; color: #3b82f6; padding: 6px 14px; border-radius: 20px; font-size: 13px;">MySQL</span>
+                <span style="background: #eef2ff; color: #3b82f6; padding: 6px 14px; border-radius: 20px; font-size: 13px;">Redis</span>
+                <span style="background: #eef2ff; color: #3b82f6; padding: 6px 14px; border-radius: 20px; font-size: 13px;">微信小程序</span>
+                <span style="background: #eef2ff; color: #3b82f6; padding: 6px 14px; border-radius: 20px; font-size: 13px;">AI API</span>
+                <span style="background: #eef2ff; color: #3b82f6; padding: 6px 14px; border-radius: 20px; font-size: 13px;">Git</span>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2026 崔峻嵘 · <a href="mailto:cuijunrong@email.com">cuijunrong@email.com</a></p>
+            <p style="margin-top: 4px;">Built with HTML & CSS · Hosted on GitHub Pages</p>
+        </footer>
+    </div>
+</body>
+</html>
